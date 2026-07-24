@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | FJ Creative Hub</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="contact">
+
+    <nav class="navbar">
+        <div class="logo"><a href="/"><img src="/assets/logo.svg" alt="Logo" width="174" height="60"></a></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/" data-i18n="navHome">الرئيسية</a></li>
+            <li><a href="/services" data-i18n="navServices">خدماتنا</a></li>
+            <li><a href="/about" data-i18n="navAbout">من نحن</a></li>
+            <li><a href="/contact" class="active" data-i18n="navContact">تواصل معنا</a></li>
+        </ul>
+        <div class="lang-switch" id="langSwitch">
+            <button type="button" class="lang-btn" data-lang="ar">AR</button>
+            <button type="button" class="lang-btn" data-lang="tr">TR</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </nav>
+
+    <section class="section page-top-offset">
+        <h1 class="section-title" data-i18n="contactPageTitle">دعنا نبدأ في تطوير أعمالك</h1>
+        <p style="color: var(--text-secondary); max-width: 700px; margin-bottom: 4rem;" data-i18n="contactPageDesc">هل أنت مستعد لنقل عملياتك التجارية إلى مستوى آخر من الكفاءة والأتمتة؟ أرسل لنا تفاصيل مشروعك أو التحدي الذي تواجهه، وسيقوم فريقنا التقني بالرد عليك بدراسة أولية متكاملة.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+            <!-- İletişim Formu -->
+            <div style="background: var(--bg-surface); padding: 3rem; border-radius: 12px; border: 1px solid var(--border);">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-i18n="formNameLabel">الاسم الكريم / المؤسسة</label>
+                        <input type="text" id="name" class="form-control" data-i18n-placeholder="formNamePlaceholder" placeholder="أدخل اسمك أو اسم الشركة" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="formEmailLabel">البريد الإلكتروني للعمل</label>
+                        <input type="email" id="email" class="form-control num-latin" data-i18n-placeholder="formEmailPlaceholder" placeholder="name@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="formMessageLabel">تفاصيل التحدي الرقمي أو المشروع المطلوب</label>
+                        <textarea id="message" class="form-control" rows="5" data-i18n-placeholder="formMessagePlaceholder" placeholder="اشرح لنا بإيجاز طبيعة العمليات التي ترغب في أتمتتها أو تطويرها..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="formSubmitBtn">إرسال الطلب التقني</button>
+                </form>
+            </div>
+
+            <!-- İletişim Bilgileri / Güven Kartı -->
+            <div style="display: flex; flex-direction: column; justify-content: center; gap: 2rem;">
+                <div style="border-right: 4px solid var(--accent); padding-right: 1.5rem;">
+                    <h3 data-i18n="contactResponseTitle">استجابة تقنية سريعة</h3>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">
+                        <span data-i18n="contactResponseDescPre">نلتزم بمراجعة جميع الطلبات الواردة من خلال مهندسي الأنظمة لدينا والرد خلال</span>
+                        <span class="num-latin">24</span>
+                        <span data-i18n="contactResponseDescPost">ساعة عمل فقط نقوم فيها بتقديم تحليل أولي مجاني لمشكلتك الرقمية.</span>
+                    </p>
+                </div>
+                <div style="border-right: 4px solid var(--border); padding-right: 1.5rem;">
+                    <h3 data-i18n="contactChannelsTitle">القنوات المباشرة</h3>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;"><span data-i18n="contactEmailLabel">البريد الإلكتروني العام:</span> <span class="num-latin" style="color: var(--text-primary);">info@fjcreativehub.com</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h4>FJ Creative Hub</h4>
+                <p data-i18n="footerDesc">نبتكر الحلول التقنية لتسهيل إدارة الأعمال وتقليص التكاليف التشغيلية عبر الأتمتة والذكاء الاصطناعي.</p>
+            </div>
+            <div class="footer-links">
+                <h5 data-i18n="footerLinksTitle">روابط سريعة</h5>
+                <ul>
+                    <li><a href="/" data-i18n="navHome">الرئيسية</a></li>
+                    <li><a href="/services" data-i18n="navServices">خدماتنا</a></li>
+                    <li><a href="/about" data-i18n="navAbout">من نحن</a></li>
+                    <li><a href="/contact" data-i18n="navContact">تواصل معنا</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span class="num-latin">2026</span> FJ Creative Hub. <span data-i18n="footerRights">جميع الحقوق محفوظة.</span></p>
+        </div>
+    </footer>
+
+    <script src="/js/languages.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

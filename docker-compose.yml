@@ -1,0 +1,9 @@
+services:
+  fjcreativehub:
+    build: .
+    container_name: fjcreativehub
+    restart: unless-stopped
+    ports:
+      # Sunucudaki 7070 portu -> container içindeki nginx 80 portu
+      # CloudPanel'de reverse proxy hedefi olarak 127.0.0.1:7070 kullanın
+      - "127.0.0.1:7070:80"
